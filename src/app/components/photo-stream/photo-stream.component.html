@@ -1,0 +1,18 @@
+<div class="container">
+    <mat-grid-list [cols]="cols" rowHeight="310px" gutterSize="16px" infiniteScroll
+                    [infiniteScrollDistance]="scrollDistance"
+                    [infiniteScrollThrottle]="throttle"
+                    (scrolled)="onScroll()">
+      <mat-grid-tile *ngFor="let photo of photos()">
+        <img [src]="photo.url" (click)="toggleFavorite(photo)" 
+             [ngClass]="{'favorite-border': photo.favorite}" />
+      </mat-grid-tile>
+    </mat-grid-list>
+
+      <!-- Loading Spinner -->
+  <div *ngIf="isLoading()" class="loading-overlay">
+    <mat-spinner diameter="50"></mat-spinner>
+    <p>Loading more photos...</p>
+  </div>
+  </div>
+  

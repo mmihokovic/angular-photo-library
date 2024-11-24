@@ -1,0 +1,9 @@
+<div class="container">
+    <mat-grid-list [cols]="cols" rowHeight="310px" gutterSize="16px">
+      <mat-grid-tile *ngFor="let photo of favorites()">
+        <img [src]="photo.url" alt="Random Photo" />
+      </mat-grid-tile>
+    </mat-grid-list>
+  </div>
+  
+  

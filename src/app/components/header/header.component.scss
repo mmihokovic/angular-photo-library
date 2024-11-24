@@ -1,0 +1,8 @@
+mat-toolbar {
+    display: flex;
+    justify-content: center;
+    button.active {
+      font-weight: bold;
+      color: #fff;
+    }
+  }

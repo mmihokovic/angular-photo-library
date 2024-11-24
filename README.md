@@ -1,2 +1,2 @@
 # angular-photo-library
-Angular 18 demo of photo library
+Angular 19 demo of photo library
